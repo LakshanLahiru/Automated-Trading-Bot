@@ -1,0 +1,29 @@
+For profit table
+
+show databases;
+create database binance;
+use binance;
+show tables;
+create table profit (OrderId long ,openTime varchar(255),closeTime varchar(255),
+size double,coin varchar(255),symbol varchar(255),leverage int ,
+balance double,entryPrice double,marketPrice double,unRealizedProfit double,ROI double);
+describe profit;
+
+Select * from profit;
+SELECT SUM(unRealizedProfit) AS total_profit FROM profit WHERE STR_TO_DATE(openTime, '%Y-%m-%d %H:%i:%s') BETWEEN '2024-03-13 00:00:00' AND '2024-03-19 23:59:59';
+
+SELECT balance FROM profit ORDER BY balance  LIMIT 1;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   for variable table
+
+use binance;
+show tables;
+create table variable(name1 varchar(1),value1 int);
+Select * from variable;
+insert into variable values('c' ,1);
+SET SQL_SAFE_UPDATES = 0;
+UPDATE variable SET value1 = 0 WHERE key_column = 'c';
+
+UPDATE variable SET value1 = 0 WHERE name1 = 'c';
+UPDATE variable SET value1 = 1 WHERE name1 = 'c';
