@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background: url("https://media.istockphoto.com/id/1463455851/photo/cryptocurrency-market-financial-data-and-candlesticks-internet-banking.webp?b=1&s=170667a&w=0&k=20&c=-vY_0E0xx9ZNF87VSNRakCbLaUkwpe0FpEtQgy_68xU=")
+    no-repeat;
+    background-size: cover;
+    position:center;
+    background-attachment: fixed;
+    z-index: -1; 
+  
+    
+}
+.boxl{
+    width: 500px;
+    height: auto;
+    background: transparent;
+    border: 2px solid rgb(255,255,255,0.2);
+    border-radius: 40px;
+    padding: 70px 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.854));
+}
+.boxl h1{
+    font-size: 36px;
+    text-align: center;
+    color: antiquewhite;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+   
+    margin: 30px 0px;
+}
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(255,255,255,0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+}
+.inputBox input::placeholder{
+    color: aliceblue;
+}
+.inputBox .is{
+    position: absolute;
+    right: 20px;
+    color: aliceblue;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: aliceblue;
+}
+.remember label input{
+    margin: 4px;
+    accent-color:white ;
+}
+.remember a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.bu button{
+    width:45% ;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.bu button:hover{
+    background-color: aquamarine;
+}
